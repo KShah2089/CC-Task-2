@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: lightblue;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.obj {
+    padding-right: 20px;   
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    .menu {
+        display:none;
+    }
+    .hamburger {
+        display: unset;
+        background-color: pink;
+    }
+    .shadow {
+        background-color: brown;
+    }
+    #icon {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .sml {
+        display: none;
+    }
+    .open {
+        display: unset;
+        background-color: pink;
+        margin-left: 0;
+        width: 60%;
+        height: 100vh;        
+    }    
+}
